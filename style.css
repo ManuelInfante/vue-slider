@@ -28,6 +28,7 @@ body{
 .slider-wrapper .images{
     height: 100%;
     text-align: center;
+    box-shadow: 7px 10px 25px 6px #000000;
 }
 
 .slider-wrapper .images img{
@@ -38,6 +39,7 @@ body{
     color: #565a5c;
     font-size: 40px;
     cursor: pointer;
+    padding: 0 15px;
 }
 
 .nav{
@@ -48,7 +50,7 @@ body{
     padding: 15px;
     border-radius: 100px;
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: rgba(255, 255, 255, 0.787);
 }
 
 .nav > i{
@@ -56,5 +58,5 @@ body{
 }
 
 .active{
-    color: blue;
+    color: rgba(0, 0, 255, 0.616);
 }
