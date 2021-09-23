@@ -13,6 +13,25 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="app" class="container">
+        <div class="slider-wrapper">
+            <div class="prev" @click="prevPhoto">
+                <i class="fas fa-angle-left"></i>
+            </div>
+
+            <div class="images">
+                <img :src="photos[counterPhoto]" alt="image 1">
+            </div>
+
+            <div class="next" @click="nextPhoto">
+                <i class="fas fa-angle-right"></i>
+            </div>
+
+            <div class="nav">
+                <i :class="(index == counterPhoto) ? 'active' : null" class="fas fa-circle" v-for="(photo,index) in photos"></i>
+            </div>
+        </div>
+    </div>
     
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
